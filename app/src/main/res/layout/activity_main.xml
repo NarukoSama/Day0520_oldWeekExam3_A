@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.day0520_oldweekexam3_a.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/vp" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="首页"
+            android:button="@null"
+            android:layout_weight="1"
+            android:id="@+id/rb1"
+            android:textColor="@drawable/rb_selector"
+            android:checked="true"
+            android:padding="20dp"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="课程分类"
+            android:button="@null"
+            android:layout_weight="1"
+            android:id="@+id/rb2"
+            android:textColor="@drawable/rb_selector"
+            android:padding="20dp"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="圈子"
+            android:button="@null"
+            android:layout_weight="1"
+            android:id="@+id/rb3"
+            android:padding="20dp"
+            android:textColor="@drawable/rb_selector"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textColor="@drawable/rb_selector"
+            android:id="@+id/rb4"
+            android:padding="20dp"
+            android:gravity="center"/>
+    </RadioGroup>
+</LinearLayout>
